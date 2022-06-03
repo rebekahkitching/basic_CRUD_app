@@ -1,0 +1,47 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD App</title>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+    <h1>There. Are. Four. NODES!!!</h1>
+
+  <form action="/quotes" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2> Quotes</h2>
+  <ul class="quotes">
+      <% for(var index = 0; index < quotes.length; index++) {%>
+        <li class="quote">
+            <span> <%= quotes[index].name %></span>:
+            <span> <%= quotes[index].quote %></span>
+        </li>
+      <% } %>
+  </ul>
+
+  <div>
+    <h2>Enter Data!</h2>
+    <p>
+      Replace Spock's quote with one from our favorite android.
+    </p>
+    <button id="update-button">Replace</button>
+  </div>
+
+  <div>
+    <h2>Remove a Data quote!</h2>
+    <p>
+      Delete one of Data's quotes (does nothing if there are no Data quotes).
+    </p>
+    <button id="delete-button">Delete</button>
+  </div>
+  <div id="message"></div>
+
+  <script src="/main.js"></script>
+
+</body>
+</html>
