@@ -8,7 +8,7 @@ A really simple CRUD app that take in Spock or Data quotes, replaces a Spock quo
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, MongoDB Atlas 
+**Tech used:** HTML, CSS, JavaScript, Node, Express, MongoDB Atlas 
 
 
 ## What I would add:
